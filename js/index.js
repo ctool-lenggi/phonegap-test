@@ -37,6 +37,8 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function (id) {
+        window.open = cordova.InAppBrowser.open;
+
         var isMenuOpen = false;
         document.getElementById('menuIcon').addEventListener('click', function (event) {
             document.getElementById('menu').setAttribute('style', (isMenuOpen ? 'display:none' : 'display:block'));
@@ -51,7 +53,7 @@ var app = {
 
         document.getElementById('fbLink').addEventListener('click', function (event) {
             event.preventDefault();
-            window.open('https://www.facebook.com', '_system');
+            window.open('https://www.facebook.com', '_system', 'location=yes');
         }, false);
 
         //listeningElement.setAttribute('style', 'display:none;');
