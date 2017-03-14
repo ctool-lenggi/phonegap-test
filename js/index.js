@@ -36,7 +36,13 @@ var app = {
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
-    receivedEvent: function(id) {
+    receivedEvent: function (id) {
+        var isMenuOpen = false;
+        document.getElementById('menuIcon').addEventListener('click', function (event) {
+            document.getElementById('menu').setAttribute('style', (isMenuOpen ? 'display:none' : 'display:block'));
+            isMenuOpen = !isMenuOpen;
+        }, false);
+
         var parentElement = document.getElementById('menu');
         //var listeningElement = parentElement.querySelector('.listening');
         //var receivedElement = parentElement.querySelector('.received');

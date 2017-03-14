@@ -6,10 +6,14 @@ body{
     padding: 0;
     margin: 0;
 }
-#menu{
+#header{
     position: fixed;
     width: 100%;
     border-bottom: 1px solid #000;
+
+    background-color: rgb(255, 255, 255);
+
+    z-index: 10;
 }
 #menuIcon, #bookingIcon{
     position: absolute;
@@ -30,4 +34,19 @@ body{
     font-weight: bold;
     font-size: 24pt;
     text-align: center;
+}
+
+#menu{
+    position: absolute;
+    top:0; bottom:0;
+    left: 0; right:0;
+
+    display: none;
+
+    background-color: rgba(108, 108, 108, 0.43);
+    z-index: 5;
+}
+
+#menu ul{
+    margin-top: 100px;
 }
