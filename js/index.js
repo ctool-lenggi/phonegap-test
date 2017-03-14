@@ -49,6 +49,11 @@ var app = {
 
         parentElement.setAttribute('style', 'background-color:#ff9900;');
 
+        document.getElementById('fbLink').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.open('https://www.facebook.com', '_system');
+        }, false);
+
         //listeningElement.setAttribute('style', 'display:none;');
         //receivedElement.setAttribute('style', 'display:block;');
 
