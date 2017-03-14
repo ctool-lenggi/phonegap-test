@@ -36,17 +36,37 @@ body{
     text-align: center;
 }
 
-#menu{
+#menu {
     position: absolute;
-    top:0; bottom:0;
-    left: 0; right:0;
-
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     display: none;
-
     background-color: rgba(108, 108, 108, 0.43);
     z-index: 5;
 }
 
 #menu ul{
-    margin-top: 100px;
+    width: 66%;
+    border: 1px solid #000;
+    background-color: rgb(255, 255, 255);
+
+    list-style-type: none;
+    margin: 100px 0px 0px 0px;
+    padding: 0;
+}
+#menu ul li{
+    border-bottom: 1px solid #000;
+}
+
+#menu ul li a{
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.active {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
 }
