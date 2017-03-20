@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Hello World</title>
+</head>
+
+<body>
+    <div id="app" class="app">
+        <div id="header">
+            <img id="menuIcon" src="./img/menu.png" alt="Menu" />
+            <p id="title"><img src="./img/logo.png" alt="Logo" /></p>
+            <img id="bookingIcon" src="./img/booking.png" alt="Booking" />
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li class="active"><a href="./schlafwerk.html">Schlafwerk</a></li>
+                <li><a href="./werkkueche.html">Werkküche</a></li>
+                <li><a href="./werkcommunity.html">Werkcommunity</a></li>
+                <li><a href="./kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div id="content" class="contentText">
+            <h1>Schlafwerk</h1>
+            <h2>Vision</h2>
+            <p>
+                Wir sind DER urbane Rückzugsort mit industriellem Charme am Puls der Stadt Winterthur. Zugleich sind wir der Treffpunkt erster Wahl im Sulzerareal.
+            </p>
+            <h2>Mission</h2>
+            <p>
+                Unser tägliches Streben nach Höchstleistungen übertrifft die Erwartungen unserer Gäste, welche bei uns zum Übernachten und Entspannen kommen. Wir schaffen eine nachhaltige und lebendige Begegnungszone für Gäste und Quartierbewohner. Nachhaltigkeit bedeutet für uns die umweltgerechte Umnutzung des Leerstands sowie die Umwandlung in eine Erholungszone, welche für alle zugänglich ist. 
+            </p>
+            <h2>Leitlinien gegenüber…</h2>
+            <p class="bold">…Gästen</p>
+            <p>
+                Unsere Gäste heissen wir herzlich bei uns willkommen und zeigen ihnen unser Angebot. Unser Ansprechpartner vor Ort kümmert sich um die Anliegen und vermittelt gastronomische Erlebnisse im Quartier sowie weitere Aktivitäten in und um Winterthur. Wir ermutigen unsere Gäste mit offenen Augen durch die umgebenden Viertel zu gehen um die Vielfalt zu entdecken.
+            </p>
+            <p class="bold">…Mitbewerber</p>
+            <p>
+                Mit unseren Mitwerbern pflegen wir eine offene und professionelle Kommunikation. Dank kooperativer Zusammenarbeit profitieren wir gegenseitig voneinander und tauschen Wissen untereinander aus. 
+            </p>
+            <p class="bold">…der Öffentlichkeit</p>
+            <p>
+                Wir sind für alle zugänglich und tragen dazu bei, eine lebendige Begegnungszone für die Einwohner der Stadt Winterthur zu gestalten. In unmittelbarer Nachbarschaft wird sich über die kommenden Jahre durch verschiedene Angebote die Attraktivität des Areals noch weiter steigern. Wir stehen für ein gemeinsames Miteinander und leben eine offene Willkommenskultur.
+            </p>
+            <p class="bold">…unseren Mitarbeitern</p>
+            <p>
+                Unsere Mitarbeitenden sind die erste Anlaufstelle für unsere Gäste und tragen die Verantwortung für ein nachhaltiges Wachstum. Wir pflegen eine wertschätzende und kollegiale Atmosphäre, führen eine transparente Kommunikation und beteiligen sie täglich an der weiteren Entwicklung des Unternehmens. 
+            </p>
+            <p class="bold">…den Geschäftspartnern</p>
+            <p>
+                Um die lokale Vernetzung weiter zu stärken setzen wir ausschliesslich auf Lieferanten und Partner aus der Umgebung. Wir stehen für loyale Geschäftsbeziehungen und fordern im Gegenzug absolute Zuverlässigkeit. 
+            </p>
+            <p class="bold">…der Umwelt</p>
+            <p>
+                Wir sehen uns als Bestandteil der zukünftigen Entwicklung urbaner Lebensräume und richten unser Denken und Handeln danach aus. Winterthur kann sich als eine der fahrrad-freundlichsten Städte der Schweiz profilieren. Dies nutzen wir zu unseren Gunsten und stellen unseren Gästen gegen einen kleinen Unkostenbeitrag Fahrräder zur Verfügung. 
+            </p>
+            <p class="bold">…dem Besitzer</p>
+            <p>
+                Regelmässiger Austausch und die Nutzung möglicher Synergien sehen wir als Chance für eine starke Zusammenarbeit. Gemeinsam mit dem Besitzer verfolgen wir eine langfristige Wachstumsstrategie. 
+            </p>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p id="socialMedias">
+            <a class="externalLink" href="https://www.facebook.com"><img src="./img/fb.png" alt="Facebook" /></a>
+            <a class="externalLink" href="https://www.google.com"><img src="./img/google.png" alt="Google" /></a>
+            <a class="externalLink" href="https://www.twitter.com"><img src="./img/twitter.png" alt="Twitter" /></a>
+            <a class="externalLink" href="https://www.instagram.com"><img src="./img/instagram.png" alt="Instagram" /></a>
+        </p>
+        <p>
+            Werk 8400<br />
+            by Urbanauts Hospitality Group<br />
+            <a href="mailto:8400@werk.ch">8400@werk.ch</a>
+        </p>
+
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+
+</body>
+
+</html>

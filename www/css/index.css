@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'CargoBecker';
+    src: url('../res/cargo_becker.ttf');
+}
+
+*{
+    font-family: Calibri;
+    font-size: 11pt;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+.app {
+    min-height: 100%;
+}
+#header{
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #000;
+
+    background-color: rgb(255, 255, 255);
+
+    z-index: 10;
+}
+#menuIcon, #bookingIcon{
+    position: absolute;
+    top: 10px;
+    width: 40px;
+}
+#menuIcon{
+    left: 10px;
+}
+#bookingIcon{
+    right: 10px;
+}
+
+#title{
+    padding: 10px 0px 5px 0px;
+    margin:0;
+    width: 100%;
+    text-align: center;
+}
+#title img{
+    height: 50px;
+}
+
+#menu, #userMenu {
+    position: absolute;
+    top: -30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    background-color: rgba(108, 108, 108, 0.43);
+    z-index: 5;
+}
+#menu ul {
+    width: 66%;
+    border-right: 1px solid #000;
+    background-color: rgb(255, 255, 255);
+    list-style-type: none;
+    margin: 100px 0px 0px 0px;
+    padding: 0;
+}
+#userMenu ul {
+    float: right;
+    width: 66%;
+    border-left: 1px solid #000;
+    background-color: rgb(255, 255, 255);
+    list-style-type: none;
+    margin: 100px 0px 0px 0px;
+    padding: 0;
+}
+#menu ul li, #userMenu ul li {
+        border-bottom: 1px solid #000;
+}
+
+    #menu ul li a, #userMenu ul li a {
+        display: block;
+        color: rgb(0, 0, 0);
+        padding: 12px 16px;
+        text-decoration: none;
+    }
+.active {
+    background-color: rgb(247, 173, 21);
+    color: rgb(255, 255, 255);
+}
+
+
+#content {
+    margin: 0;
+    padding: 55px 0px 86px 0px;
+}
+.contentText > * {
+    padding: 10px;
+}
+
+
+#footer {
+    background-color: rgb(247, 173, 21);
+    padding: 5px 10px;
+    height: 90px;
+    margin-top: -100px;
+}
+    #footer * {
+        font-size: 9pt;
+    }
+
+#socialMedias img{
+    float: right;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.homeBox, .banner {
+    width: 100%;
+}
+.bold{
+    font-weight: bold;
+}
+.center{
+    text-align: center;
+}
+.communityList img {
+    width: 45%;
+}
+h1 {
+    font-family: CargoBecker;
+    font-size: 24pt;
+}
+h2 {
+    font-family: CargoBecker;
+    font-size: 18pt;
+}
